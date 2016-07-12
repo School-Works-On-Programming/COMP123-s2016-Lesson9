@@ -18,7 +18,6 @@ namespace COMP123_Lesson9
              * <summary>
              * 
              * </summary>
-             * 
              **/
             InitializeComponent();
         }
