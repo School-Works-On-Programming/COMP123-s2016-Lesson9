@@ -22,9 +22,40 @@ namespace COMP123_Lesson9
             InitializeComponent();
         }
 
+
+        //PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++
+
+            /**
+             *<summary>
+             * This mehtod cleras the UsernameTExtBox and the PasswordTextBox 
+             * </summary> 
+             * 
+             * @private
+             * @method _clearForm
+             * @returns {void}
+             **/
+        private void _clearForm()
+        {
+            UsernameTextBox.Clear();
+            PasswordTextBox.Clear(); 
+        }
+
+        /**
+         * <summary>
+         * This is the LoginButton click even handler 
+         * </summary>
+         * 
+         * @private
+         * @method LoginButton_Click
+         * @param {object} sender
+         * @param {EventArgs} e 
+         * @returns {void}
+         */
         private void LoginButton_Click(object sender, EventArgs e)
         {
-
+            Debug.WriteLine("Username: " + UsernameTextBox.Text);
+            Debug.WriteLine("Password: " + PasswordTextBox.Text);
+            this._clearForm(); 
         }
     }
 }
